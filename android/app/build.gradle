@@ -117,9 +117,6 @@ android {
 repositories {
     mavenCentral()
     google()
-    maven {
-        url "https://repo.qoreid.com/repository/maven-releases/"
-    }
     maven { url 'https://jitpack.io' }
 }
 
