@@ -1,5 +1,16 @@
 <svg width="32" height="42" viewBox="0 0 32 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M20.8809 0C9.34859 0 0 9.36712 0 20.922H7.73901C7.73901 13.6497 13.6229 7.75432 20.8809 7.75432L20.8809 0Z" fill="#7567F5"/>
-<path d="M10.4404 41.8439C21.9727 41.8439 31.3213 32.4768 31.3213 20.9219H23.5823C23.5823 28.1942 17.6984 34.0896 10.4404 34.0896L10.4404 41.8439Z" fill="#24D8F2"/>
-<path d="M15.6608 16.0547H15.6608C12.9794 16.0547 10.8057 18.2327 10.8057 20.9194V20.9194C10.8057 23.6061 12.9794 25.7841 15.6608 25.7841H15.6608C18.3423 25.7841 20.516 23.6061 20.516 20.9194V20.9194C20.516 18.2327 18.3423 16.0547 15.6608 16.0547Z" fill="#1B95F9"/>
+  <!-- Shopping Cart Base -->
+  <path d="M4 12L7 32H25L28 12H4Z" fill="#4F46E5" stroke="#4F46E5" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Cart Handle -->
+  <path d="M7 12L5 6H1" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cart Wheels -->
+  <circle cx="10" cy="36" r="3" fill="#4F46E5"/>
+  <circle cx="22" cy="36" r="3" fill="#4F46E5"/>
+  <!-- Timer/Clock Circle -->
+  <circle cx="22" cy="10" r="9" fill="#10B981" stroke="white" stroke-width="2"/>
+  <!-- Clock Hands -->
+  <path d="M22 6V10L25 12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Cart Items -->
+  <rect x="10" y="16" width="5" height="8" rx="1" fill="white" opacity="0.8"/>
+  <rect x="17" y="18" width="5" height="6" rx="1" fill="white" opacity="0.8"/>
 </svg>
