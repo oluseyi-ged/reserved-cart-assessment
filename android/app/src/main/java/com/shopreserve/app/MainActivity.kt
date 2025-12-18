@@ -9,7 +9,7 @@ import com.zoontek.rnbootsplash.RNBootSplash
 import com.qoreid.reactnativeqoreidsdk.RNQoreIdSdkModule
 
 class MainActivity : ReactActivity() {
-    override fun getMainComponentName(): String = "SimplirideDriver"
+    override fun getMainComponentName(): String = "ShopReserve"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         RNBootSplash.init(this, R.style.BootTheme)

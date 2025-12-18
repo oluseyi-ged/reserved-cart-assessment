@@ -4,43 +4,15 @@ def node_require(script)
 end
 
 node_require('react-native/scripts/react_native_pods.rb')
-node_require('react-native-permissions/scripts/setup.rb')
-
-$VCEnableFrameProcessors = true
-
-# firebase setup
-$RNFirebaseAsStaticFramework = true
-use_frameworks! :linkage => :static
 
 platform :ios, '15.5'
 prepare_react_native_project!
 
-# Fix for duplicate GoogleUtilities
+# Fix for duplicate UUIDs
 install! 'cocoapods', :deterministic_uuids => false
-
-setup_permissions([
-  'Camera',
-  'FaceID',
-  'LocationAccuracy',
-  'LocationAlways',
-  'LocationWhenInUse',
-  'MediaLibrary',
-  'Notifications',
-  'PhotoLibrary',
-  'PhotoLibraryAddOnly',
-])
-
-# Force compatible versions
-pod 'GoogleMaps', '9.3.0'
-pod 'GoogleDataTransport', '~> 9.3'
-# CHANGED: Allow GoogleUtilities 7.13+ for Firebase compatibility
-pod 'GoogleUtilities', '~> 7.13', :modular_headers => true
 
 target 'ShopReserve' do
   config = use_native_modules!
-
-  rn_maps_path = '../node_modules/react-native-maps'
-  pod 'react-native-maps/Google', :path => rn_maps_path
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -49,11 +21,6 @@ target 'ShopReserve' do
   )
 
   post_install do |installer|
-    # Set ONLY_ACTIVE_ARCH to NO at project level
-    installer.pods_project.build_configurations.each do |config|
-      config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-    end
-    
     react_native_post_install(
       installer,
       config[:reactNativePath],
@@ -61,18 +28,16 @@ target 'ShopReserve' do
     )
 
     installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |config|
-        # Fix GoogleUtilities duplicate framework issue
-        if target.name.include?('GoogleUtilities')
-          config.build_settings['PRODUCT_BUNDLE_IDENTIFIER'] = "org.cocoapods.#{target.name}"
-        end
-        
-        config.build_settings['SWIFT_VERSION'] = '5.0'
-        config.build_settings["ONLY_ACTIVE_ARCH"] = "NO"
-        
+      target.build_configurations.each do |build_config|
+        build_config.build_settings['SWIFT_VERSION'] = '5.0'
+
+        # Xcode 26 beta fix: Disable Swift explicit modules to avoid cyclic dependency errors
+        build_config.build_settings['SWIFT_ENABLE_EXPLICIT_MODULES'] = 'NO'
+        build_config.build_settings['OTHER_SWIFT_FLAGS'] = '$(inherited) -Xfrontend -disable-explicit-module-build'
+
         # Fix deployment target warnings
-        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 13.0
-          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        if build_config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 13.0
+          build_config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
         end
       end
     end

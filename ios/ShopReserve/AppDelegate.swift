@@ -9,12 +9,9 @@ import UIKit
     import ReactAppDependencyProvider
 #endif
 import RNBootSplash
-import GoogleMaps
-import Firebase
-import UserNotifications
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
   var reactNativeDelegate: ReactNativeDelegate?
@@ -24,15 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
-    // Initialize Firebase FIRST
-    FirebaseApp.configure()
-    
-    // Set up notifications
-    UNUserNotificationCenter.current().delegate = self
-    
-    // Configure Google Maps
-    GMSServices.provideAPIKey("AIzaSyDHMslMEKLhI1zKIswkqSuG4p25Hq4FrU0")
-    
     let delegate = ReactNativeDelegate()
     let factory = RCTReactNativeFactory(delegate: delegate)
     delegate.dependencyProvider = RCTAppDependencyProvider()
@@ -42,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     window = UIWindow(frame: UIScreen.main.bounds)
 
-    let rootView = reactNativeFactory!.rootViewFactory.view(withModuleName: "SimplirideDriver")
-    
+    let rootView = reactNativeFactory!.rootViewFactory.view(withModuleName: "ShopReserve")
+
     let reactViewController = UIViewController()
     reactViewController.view = rootView
 
@@ -54,49 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     window?.makeKeyAndVisible()
 
     return true
-  }
-  
-  // MARK: - Push Notifications
-  
-  // Handle notification when app is in foreground
-  func userNotificationCenter(
-    _ center: UNUserNotificationCenter,
-    willPresent notification: UNNotification,
-    withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void
-  ) {
-    let userInfo = notification.request.content.userInfo
-    
-    // Print for debugging
-    print("Notification received in foreground: \(userInfo)")
-    
-    // Show notification even when app is in foreground
-    completionHandler([[.banner, .badge, .sound]])
-  }
-  
-  // Handle notification tap
-  func userNotificationCenter(
-    _ center: UNUserNotificationCenter,
-    didReceive response: UNNotificationResponse,
-    withCompletionHandler completionHandler: @escaping () -> Void
-  ) {
-    let userInfo = response.notification.request.content.userInfo
-    
-    // Print for debugging
-    print("Notification tapped: \(userInfo)")
-    
-    completionHandler()
-  }
-  
-  // Handle remote notifications
-  func application(
-    _ application: UIApplication,
-    didReceiveRemoteNotification userInfo: [AnyHashable: Any],
-    fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void
-  ) {
-    // Print for debugging
-    print("Remote notification received: \(userInfo)")
-    
-    completionHandler(.newData)
   }
 }
 

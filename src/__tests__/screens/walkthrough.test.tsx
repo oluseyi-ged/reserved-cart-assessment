@@ -142,7 +142,7 @@ describe('Walkthrough', () => {
     const skipButton = getByText('Skip');
     fireEvent.press(skipButton);
 
-    expect(getByText('Earn money with SimpliRide Driver App')).toBeTruthy();
+    expect(getByText('Earn money with ShopReserve App')).toBeTruthy();
     expect(getByText('Get Started')).toBeTruthy();
   });
 
@@ -223,7 +223,7 @@ describe('Walkthrough', () => {
     fireEvent.press(arrowButton);
     fireEvent.press(arrowButton);
 
-    expect(getByText('Earn money with SimpliRide Driver App')).toBeTruthy();
+    expect(getByText('Earn money with ShopReserve App')).toBeTruthy();
   });
 
   it('shows swipe to explore text on non-last screens', () => {

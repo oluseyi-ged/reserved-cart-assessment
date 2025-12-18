@@ -1,7 +1,6 @@
 /**
  * Trip Types for WebSocket Communication
- * Based on SimpliRide WebSocket API Documentation
- * https://realtime.simpliride.com/docs/
+ * Based on ShopReserve WebSocket API Documentation
  */
 
 // ==================== Trip Status ====================

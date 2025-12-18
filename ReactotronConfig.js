@@ -4,7 +4,7 @@ import {reactotronRedux} from 'reactotron-redux';
 
 const reactotron = __DEV__
   ? Reactotron.configure({
-      name: 'Simpliride Partner App',
+      name: 'ShopReserve',
     })
       .useReactNative() // add all built-in react native plugins
       .use(asyncStorage())

@@ -91,7 +91,7 @@ export const ErrorFallback: React.FC<ErrorFallbackProps> = ({
             color={palette.blue}
             textAlign="center">
             If this issue persists, please contact support at
-            support@simpliride.com
+            support@shopreserve.com
           </Text>
         </Block>
       </Block>

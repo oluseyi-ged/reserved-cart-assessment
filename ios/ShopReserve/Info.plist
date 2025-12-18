@@ -44,13 +44,13 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app uses your location to improve service accuracy and user experience.</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>SimpliRide needs access to your microphone for voice recognition and audio recording features.</string>
+	<string>ShopReserve needs access to your microphone for voice recognition and audio recording features.</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
-	<string>SimpliRide uses speech recognition to enable voice commands for quick access to safety features.</string>
+	<string>ShopReserve uses speech recognition to enable voice commands for quick access to features.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>We need access to your photo library to allow you to select and upload images.</string>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>SimpliRide may access your media library to play audio during rides.</string>
+	<string>ShopReserve may access your media library to play audio.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Outfit-Black.ttf</string>

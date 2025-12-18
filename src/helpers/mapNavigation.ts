@@ -3,7 +3,7 @@ import {Linking, Platform} from 'react-native';
 
 // Map app configurations with URL schemes
 const MAP_APP_CONFIGS: Record<
-  Exclude<NavigationAppType, 'SIMPLIRIDE'>,
+  Exclude<NavigationAppType, 'SHOPRESERVE'>,
   {
     name: string;
     icon: string;
@@ -96,8 +96,8 @@ export const checkMapAppAvailability = async (
 export const getAvailableMapApps = async (): Promise<AvailableMapApp[]> => {
   const apps: AvailableMapApp[] = [
     {
-      id: 'SIMPLIRIDE',
-      name: 'Simpliride',
+      id: 'SHOPRESERVE',
+      name: 'ShopReserve',
       icon: 'app-icon',
       isAvailable: true,
       urlScheme: '',
@@ -186,8 +186,8 @@ export const startNavigation = async (
   destination: {latitude: number; longitude: number},
   origin?: {latitude: number; longitude: number},
 ): Promise<{useInApp: boolean; success: boolean}> => {
-  // If Simpliride is selected, use in-app navigation
-  if (selectedApp === 'SIMPLIRIDE') {
+  // If ShopReserve is selected, use in-app navigation
+  if (selectedApp === 'SHOPRESERVE') {
     return {useInApp: true, success: true};
   }
 
