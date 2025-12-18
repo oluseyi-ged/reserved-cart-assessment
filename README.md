@@ -206,7 +206,7 @@ yarn install
 cd ios && pod install && cd ..
 ```
 
-### Running
+### Running (Development)
 
 ```bash
 # Start Metro bundler
@@ -218,6 +218,50 @@ yarn ios
 # Run on Android
 yarn android
 ```
+
+### Building for Release
+
+#### Android Debug APK
+
+```bash
+cd android
+./gradlew assembleDebug
+```
+
+The APK will be generated at:
+```
+android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+#### Android Release APK
+
+```bash
+cd android
+./gradlew assembleRelease
+```
+
+Note: Release builds require signing configuration in `android/gradle.properties`:
+```properties
+MYAPP_UPLOAD_STORE_FILE=your-keystore.keystore
+MYAPP_UPLOAD_KEY_ALIAS=your-key-alias
+MYAPP_UPLOAD_STORE_PASSWORD=your-store-password
+MYAPP_UPLOAD_KEY_PASSWORD=your-key-password
+```
+
+#### iOS Build
+
+```bash
+# Install pods first
+cd ios && pod install && cd ..
+
+# Open in Xcode
+open ios/ShopReserve.xcworkspace
+```
+
+Then in Xcode:
+- Select your target device or simulator
+- Product > Build (Cmd+B)
+- For archive: Product > Archive
 
 ## Testing the Feature
 
