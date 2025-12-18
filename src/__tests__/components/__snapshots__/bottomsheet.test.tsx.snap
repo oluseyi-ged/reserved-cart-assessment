@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BottomSheet Component Snapshot Tests should match snapshot - basic 1`] = `
+<View
+  testID="bottom-sheet-provider"
+>
+  <View
+    backdropComponent={[Function]}
+    backgroundStyle={
+      {
+        "backgroundColor": "#FFFFFF",
+      }
+    }
+    enableDismissOnClose={true}
+    enableDynamicSizing={false}
+    enablePanDownToClose={true}
+    handleIndicatorStyle={
+      {
+        "backgroundColor": "#000000",
+      }
+    }
+    stackBehavior="replace"
+    testID="bottom-sheet-modal"
+  >
+    <Text>
+      Basic Content
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomSheet Component Snapshot Tests should match snapshot - with complex children 1`] = `
+<View
+  testID="bottom-sheet-provider"
+>
+  <View
+    backdropComponent={[Function]}
+    backgroundStyle={
+      {
+        "backgroundColor": "#FFFFFF",
+      }
+    }
+    enableDismissOnClose={true}
+    enableDynamicSizing={false}
+    enablePanDownToClose={true}
+    handleIndicatorStyle={
+      {
+        "backgroundColor": "#000000",
+      }
+    }
+    stackBehavior="replace"
+    testID="bottom-sheet-modal"
+  >
+    <Text>
+      Header
+    </Text>
+    <Text>
+      Body
+    </Text>
+    <Text>
+      Footer
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomSheet Component Snapshot Tests should match snapshot - with custom props 1`] = `
+<View
+  testID="bottom-sheet-provider"
+>
+  <View
+    backdropComponent={[Function]}
+    backgroundStyle={
+      {
+        "backgroundColor": "#FFFFFF",
+      }
+    }
+    enableDismissOnClose={true}
+    enableDynamicSizing={false}
+    enablePanDownToClose={false}
+    handleIndicatorStyle={
+      {
+        "backgroundColor": "#000000",
+      }
+    }
+    stackBehavior="replace"
+    testID="bottom-sheet-modal"
+  >
+    <Text>
+      Custom Props Content
+    </Text>
+  </View>
+</View>
+`;

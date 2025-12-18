@@ -1,0 +1,496 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ModalView Snapshot Tests should match snapshot - closed modal 1`] = `null`;
+
+exports[`ModalView Snapshot Tests should match snapshot - minimal props 1`] = `
+<View
+  testID="modal-container"
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "white",
+          "borderRadius": 10,
+          "padding": 20,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 18,
+          "fontWeight": "bold",
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View />
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "blue",
+                "fontSize": 16,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "height": undefined,
+            "width": 24,
+          }
+        }
+        testID="sized-box"
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "red",
+                "fontSize": 16,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ModalView Snapshot Tests should match snapshot - modal with custom styles 1`] = `
+<View
+  testID="modal-container"
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "white",
+          "borderRadius": 10,
+          "padding": 20,
+        },
+        {
+          "backgroundColor": "lightgray",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 18,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Styled Modal
+    </Text>
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View />
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "blue",
+                "fontSize": 16,
+              },
+              {
+                "color": "green",
+              },
+            ]
+          }
+        >
+          Button 1
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "height": undefined,
+            "width": 24,
+          }
+        }
+        testID="sized-box"
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "red",
+                "fontSize": 16,
+              },
+              {
+                "color": "orange",
+              },
+            ]
+          }
+        >
+          Button 2
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ModalView Snapshot Tests should match snapshot - open modal with all props 1`] = `
+<View
+  testID="modal-container"
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "white",
+          "borderRadius": 10,
+          "padding": 20,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text
+      style={
+        {
+          "fontSize": 18,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      Confirmation
+    </Text>
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View>
+      <Text>
+        Are you sure?
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "height": 14,
+          "width": undefined,
+        }
+      }
+      testID="sized-box"
+    />
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "blue",
+                "fontSize": 16,
+              },
+              undefined,
+            ]
+          }
+        >
+          Cancel
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "height": undefined,
+            "width": 24,
+          }
+        }
+        testID="sized-box"
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            [
+              {
+                "color": "red",
+                "fontSize": 16,
+              },
+              undefined,
+            ]
+          }
+        >
+          Confirm
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;

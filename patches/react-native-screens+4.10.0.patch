@@ -1,0 +1,38 @@
+diff --git a/node_modules/react-native-screens/ios/RNSFullWindowOverlay.mm b/node_modules/react-native-screens/ios/RNSFullWindowOverlay.mm
+--- a/node_modules/react-native-screens/ios/RNSFullWindowOverlay.mm
++++ b/node_modules/react-native-screens/ios/RNSFullWindowOverlay.mm
+@@ -10,7 +10,6 @@
+ #import <react/renderer/components/rnscreens/ComponentDescriptors.h>
+ #import <react/renderer/components/rnscreens/Props.h>
+ #import <react/renderer/components/rnscreens/RCTComponentViewHelpers.h>
+-#import <rnscreens/RNSFullWindowOverlayComponentDescriptor.h>
+ #else
+ #import <React/RCTTouchHandler.h>
+ #endif // RCT_NEW_ARCH_ENABLED
+@@ -170,11 +169,6 @@
+   }
+ }
+ 
+-+ (react::ComponentDescriptorProvider)componentDescriptorProvider
+-{
+-  return react::concreteComponentDescriptorProvider<react::RNSFullWindowOverlayComponentDescriptor>();
+-}
+-
+ - (void)prepareForRecycle
+ {
+   [_container removeFromSuperview];
+diff --git a/node_modules/react-native-screens/ios/RNSScreenNavigationContainer.mm b/node_modules/react-native-screens/ios/RNSScreenNavigationContainer.mm
+--- a/node_modules/react-native-screens/ios/RNSScreenNavigationContainer.mm
++++ b/node_modules/react-native-screens/ios/RNSScreenNavigationContainer.mm
+@@ -35,11 +35,6 @@ namespace react = facebook::react;
+ 
+ #pragma mark-- Fabric specific
+ #ifdef RCT_NEW_ARCH_ENABLED
+-+ (react::ComponentDescriptorProvider)componentDescriptorProvider
+-{
+-  return react::concreteComponentDescriptorProvider<react::RNSScreenNavigationContainerComponentDescriptor>();
+-}
+-
+ // Needed because of this: https://github.com/facebook/react-native/pull/37274
+ + (void)load
+ {

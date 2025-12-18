@@ -1,0 +1,63 @@
+diff --git a/node_modules/@qore-id/react-native-qoreid-sdk/android/src/main/java/com/qoreid/reactnativeqoreidsdk/RNQoreIdSdkModule.kt b/node_modules/@qore-id/react-native-qoreid-sdk/android/src/main/java/com/qoreid/reactnativeqoreidsdk/RNQoreIdSdkModule.kt
+index 1234567..abcdefg 100644
+--- a/node_modules/@qore-id/react-native-qoreid-sdk/android/src/main/java/com/qoreid/reactnativeqoreidsdk/RNQoreIdSdkModule.kt
++++ b/node_modules/@qore-id/react-native-qoreid-sdk/android/src/main/java/com/qoreid/reactnativeqoreidsdk/RNQoreIdSdkModule.kt
+@@ -69,7 +69,7 @@ class RNQoreIdSdkModule(context: ReactApplicationContext) :
+                           putString("event", "SESSION_RESULT")
+                         }
+
+-                 emitOnResult( event)
++                 sendEvent(event)
+               }
+             }
+     )
+@@ -171,7 +171,7 @@ class RNQoreIdSdkModule(context: ReactApplicationContext) :
+                   putString("message", qoreIdResult.message)
+                   putString("event", "ERROR_RESULT")
+                 }
+-        emitOnResult(event)
++        sendEvent(event)
+       }
+       is SuccessResult -> {
+         // Handle success.
+@@ -182,7 +182,7 @@ class RNQoreIdSdkModule(context: ReactApplicationContext) :
+                   putString("event", "SUCCESS_RESULT")
+                 }
+
+-        emitOnResult(event)
++        sendEvent(event)
+       }
+     }
+   }
+@@ -207,6 +207,12 @@ class RNQoreIdSdkModule(context: ReactApplicationContext) :
+     return dataMap
+   }
+
++  private fun sendEvent(params: WritableMap) {
++    reactApplicationContext
++      .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter::class.java)
++      .emit("onResult", params)
++  }
++
+   companion object {
+     const val NAME = "RNQoreIdSdk"
+
+diff --git a/node_modules/@qore-id/react-native-qoreid-sdk/src/NativeRNQoreIdSdk.ts b/node_modules/@qore-id/react-native-qoreid-sdk/src/NativeRNQoreIdSdk.ts
+index 1234567..abcdefg 100644
+--- a/node_modules/@qore-id/react-native-qoreid-sdk/src/NativeRNQoreIdSdk.ts
++++ b/node_modules/@qore-id/react-native-qoreid-sdk/src/NativeRNQoreIdSdk.ts
+@@ -1,12 +1,12 @@
+ import {
+   TurboModuleRegistry,
+-  type CodegenTypes,
+   type TurboModule,
+ } from 'react-native';
++import { EventEmitter } from 'react-native/Libraries/Types/CodegenTypes';
+
+ export interface Spec extends TurboModule {
+   launchQoreidSdk: (arg: Object) => void;
+-  readonly onResult: CodegenTypes.EventEmitter<Object>;
++  readonly onResult: EventEmitter<Object>;
+ }
+
+ export default TurboModuleRegistry.getEnforcing<Spec>('RNQoreIdSdk');

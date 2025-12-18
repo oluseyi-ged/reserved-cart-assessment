@@ -1,0 +1,483 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CustomPhoneInput Snapshot Tests should match snapshot - default props 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#FBFBFD",
+        "borderColor": "#26323833",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 68,
+        "overflow": "hidden",
+        "paddingVertical": 0,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="phone-input-container"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "width": "40%",
+      }
+    }
+    testID="flag-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#161F4CCC",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 14,
+          },
+          undefined,
+        ]
+      }
+      testID="country-code"
+    >
+      +
+      234
+    </Text>
+    <View
+      testID="dropdown-image"
+    >
+      <View
+        testID="svg-icon-caret-down"
+      >
+        <Text>
+          caret-down
+        </Text>
+        <Text>
+          22
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingVertical": 0,
+        },
+        undefined,
+      ]
+    }
+    testID="text-container"
+  >
+    <TextInput
+      defaultValue=""
+      editable={true}
+      onChangeText={[Function]}
+      placeholder=""
+      style={
+        [
+          {
+            "color": "#161F4C",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 12,
+            "letterSpacing": 2,
+          },
+          undefined,
+        ]
+      }
+      testID="phone-text-input"
+    />
+  </View>
+</View>
+`;
+
+exports[`CustomPhoneInput Snapshot Tests should match snapshot - disabled state 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#FBFBFD",
+        "borderColor": "#26323833",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 68,
+        "overflow": "hidden",
+        "paddingVertical": 0,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="phone-input-container"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": true,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={false}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "width": "40%",
+      }
+    }
+    testID="flag-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#161F4CCC",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 14,
+          },
+          undefined,
+        ]
+      }
+      testID="country-code"
+    >
+      +
+      234
+    </Text>
+    <View
+      testID="dropdown-image"
+    >
+      <View
+        testID="svg-icon-caret-down"
+      >
+        <Text>
+          caret-down
+        </Text>
+        <Text>
+          22
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingVertical": 0,
+        },
+        undefined,
+      ]
+    }
+    testID="text-container"
+  >
+    <TextInput
+      defaultValue="8012345678"
+      editable={false}
+      onChangeText={[Function]}
+      placeholder="Phone number"
+      style={
+        [
+          {
+            "color": "#161F4C",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 12,
+            "letterSpacing": 2,
+          },
+          undefined,
+        ]
+      }
+      testID="phone-text-input"
+    />
+  </View>
+</View>
+`;
+
+exports[`CustomPhoneInput Snapshot Tests should match snapshot - with all props 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#FBFBFD",
+        "borderColor": "#26323833",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 68,
+        "overflow": "hidden",
+        "paddingVertical": 0,
+        "width": "100%",
+      },
+      undefined,
+    ]
+  }
+  testID="phone-input-container"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "width": "40%",
+      }
+    }
+    testID="flag-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#161F4CCC",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 14,
+          },
+          undefined,
+        ]
+      }
+      testID="country-code"
+    >
+      +
+      1
+    </Text>
+    <View
+      testID="dropdown-image"
+    >
+      <View
+        testID="svg-icon-caret-down"
+      >
+        <Text>
+          caret-down
+        </Text>
+        <Text>
+          22
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingVertical": 0,
+        },
+        undefined,
+      ]
+    }
+    testID="text-container"
+  >
+    <TextInput
+      defaultValue="8012345678"
+      editable={true}
+      onChangeText={[Function]}
+      placeholder="Enter phone number"
+      style={
+        [
+          {
+            "color": "#161F4C",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 12,
+            "letterSpacing": 2,
+          },
+          undefined,
+        ]
+      }
+      testID="phone-text-input"
+    />
+  </View>
+</View>
+`;
+
+exports[`CustomPhoneInput Snapshot Tests should match snapshot - with custom styles 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#FBFBFD",
+        "borderColor": "#26323833",
+        "borderRadius": 8,
+        "borderWidth": 1,
+        "height": 68,
+        "overflow": "hidden",
+        "paddingVertical": 0,
+        "width": "100%",
+      },
+      {
+        "backgroundColor": "lightblue",
+      },
+    ]
+  }
+  testID="phone-input-container"
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "width": "35%",
+      }
+    }
+    testID="flag-button"
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#161F4CCC",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 14,
+          },
+          {
+            "color": "green",
+          },
+        ]
+      }
+      testID="country-code"
+    >
+      +
+      234
+    </Text>
+    <View
+      testID="dropdown-image"
+    >
+      <View
+        testID="svg-icon-caret-down"
+      >
+        <Text>
+          caret-down
+        </Text>
+        <Text>
+          22
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "paddingVertical": 0,
+        },
+        undefined,
+      ]
+    }
+    testID="text-container"
+  >
+    <TextInput
+      defaultValue=""
+      editable={true}
+      onChangeText={[Function]}
+      placeholder=""
+      style={
+        [
+          {
+            "color": "#161F4C",
+            "fontFamily": "CustomFont-Medium",
+            "fontSize": 12,
+            "letterSpacing": 2,
+          },
+          {
+            "fontSize": 18,
+          },
+        ]
+      }
+      testID="phone-text-input"
+    />
+  </View>
+</View>
+`;

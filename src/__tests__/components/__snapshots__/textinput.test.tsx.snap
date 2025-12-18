@@ -1,0 +1,741 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextInput Snapshot Tests should match snapshot - basic input 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E0E0E0",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 5,
+          "opacity": 0,
+          "transform": [
+            {
+              "translateY": 20,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 5,
+            },
+            {
+              "height": 27,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "marginRight": 8,
+          }
+        }
+      />
+      <TextInput
+        autoCapitalize="none"
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter text"
+        placeholderTextColor="#B9BCC9"
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "color": "#161F4C",
+              "flex": 1,
+              "fontSize": 12,
+              "fontWeight": "600",
+              "paddingLeft": 16,
+            },
+            undefined,
+          ]
+        }
+        textAlignVertical="top"
+      />
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -10,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -5,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 10,
+          "width": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInput Snapshot Tests should match snapshot - clearable with value 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E0E0E0",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 5,
+          "opacity": 1,
+          "transform": [
+            {
+              "translateY": 0,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 5,
+            },
+            {
+              "height": 27,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "marginRight": 8,
+          }
+        }
+      />
+      <TextInput
+        autoCapitalize="none"
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholderTextColor="#B9BCC9"
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "color": "#161F4C",
+              "flex": 1,
+              "fontSize": 12,
+              "fontWeight": "600",
+              "paddingLeft": 16,
+            },
+            undefined,
+          ]
+        }
+        textAlignVertical="top"
+        value="Some text"
+      />
+      <View
+        testID="icon-check"
+      >
+        <Text>
+          check
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "height": undefined,
+            "width": 12,
+          }
+        }
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="icon-close"
+      >
+        <Text>
+          close
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -10,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -5,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 10,
+          "width": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInput Snapshot Tests should match snapshot - password field 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E0E0E0",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 5,
+          "opacity": 0,
+          "transform": [
+            {
+              "translateY": 20,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 5,
+            },
+            {
+              "height": 27,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "marginRight": 8,
+          }
+        }
+      />
+      <TextInput
+        autoCapitalize="none"
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter password"
+        placeholderTextColor="#B9BCC9"
+        secureTextEntry={true}
+        style={
+          [
+            {
+              "color": "#161F4C",
+              "flex": 1,
+              "fontSize": 12,
+              "fontWeight": "600",
+              "paddingLeft": 16,
+            },
+            undefined,
+          ]
+        }
+        textAlignVertical="top"
+      />
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "alignSelf": "center",
+              "color": "#5D0084",
+              "fontSize": 10,
+              "paddingHorizontal": 10,
+            }
+          }
+        >
+          Show
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -10,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -5,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 10,
+          "width": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInput Snapshot Tests should match snapshot - with icons 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E0E0E0",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 5,
+          "opacity": 0,
+          "transform": [
+            {
+              "translateY": 20,
+            },
+          ],
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "marginBottom": 5,
+            },
+            {
+              "height": 27,
+            },
+          ]
+        }
+      />
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "marginLeft": 25,
+          }
+        }
+        testID="icon-user"
+      >
+        <Text>
+          user
+        </Text>
+      </View>
+      <TextInput
+        autoCapitalize="none"
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Search"
+        placeholderTextColor="#B9BCC9"
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "color": "#161F4C",
+              "flex": 1,
+              "fontSize": 12,
+              "fontWeight": "600",
+              "paddingLeft": 16,
+            },
+            undefined,
+          ]
+        }
+        textAlignVertical="top"
+      />
+      <View
+        style={
+          {
+            "marginRight": 24,
+          }
+        }
+        testID="icon-search"
+      >
+        <Text>
+          search
+        </Text>
+      </View>
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -10,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -5,
+          },
+        ],
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "height": 10,
+          "width": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`TextInput Snapshot Tests should match snapshot - with label and error 1`] = `
+<View>
+  <View
+    style={
+      [
+        {
+          "borderColor": "#E0E0E0",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "padding": 12,
+        },
+        undefined,
+        undefined,
+        false,
+        false,
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "marginBottom": 5,
+          "opacity": 0,
+          "transform": [
+            {
+              "translateY": 20,
+            },
+          ],
+        }
+      }
+    >
+      <Text
+        style={
+          [
+            undefined,
+            {
+              "color": "#161F4C",
+            },
+          ]
+        }
+      >
+        Email
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "marginRight": 8,
+          }
+        }
+      />
+      <TextInput
+        autoCapitalize="none"
+        editable={true}
+        onBlur={[Function]}
+        onChangeText={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter email"
+        placeholderTextColor="#B9BCC9"
+        secureTextEntry={false}
+        style={
+          [
+            {
+              "color": "#161F4C",
+              "flex": 1,
+              "fontSize": 12,
+              "fontWeight": "600",
+              "paddingLeft": 16,
+            },
+            undefined,
+          ]
+        }
+        textAlignVertical="top"
+      />
+    </View>
+  </View>
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -10,
+          },
+        ],
+      }
+    }
+  />
+  <View
+    collapsable={false}
+    style={
+      {
+        "opacity": 0,
+        "transform": [
+          {
+            "translateY": -5,
+          },
+        ],
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "red",
+            "marginTop": 5,
+          },
+        ]
+      }
+    >
+      Invalid email
+    </Text>
+    <View
+      style={
+        {
+          "height": 16,
+          "width": undefined,
+        }
+      }
+    />
+  </View>
+</View>
+`;

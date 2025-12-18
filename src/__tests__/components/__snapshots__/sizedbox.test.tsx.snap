@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SizedBox Rendering should render with default empty view 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": undefined,
+        "flex": undefined,
+        "height": undefined,
+        "width": undefined,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`SizedBox Snapshot Tests should match snapshot - all props 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "yellow",
+        "flex": 1,
+        "height": 50,
+        "width": 100,
+      },
+      {
+        "padding": 10,
+      },
+      {
+        "borderColor": "black",
+        "borderWidth": 0.331,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`SizedBox Snapshot Tests should match snapshot - no props 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": undefined,
+        "flex": undefined,
+        "height": undefined,
+        "width": undefined,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`SizedBox Snapshot Tests should match snapshot - with colors 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "red",
+        "flex": undefined,
+        "height": undefined,
+        "width": undefined,
+      },
+      undefined,
+      {
+        "borderColor": "blue",
+        "borderWidth": 0.331,
+      },
+    ]
+  }
+/>
+`;
+
+exports[`SizedBox Snapshot Tests should match snapshot - with dimensions 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": undefined,
+        "flex": undefined,
+        "height": 50,
+        "width": 100,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`SizedBox Snapshot Tests should match snapshot - with flex 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": undefined,
+        "flex": 1,
+        "height": undefined,
+        "width": undefined,
+      },
+      undefined,
+      undefined,
+    ]
+  }
+/>
+`;
