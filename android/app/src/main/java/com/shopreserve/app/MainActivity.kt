@@ -1,4 +1,4 @@
-package com.simpliride.driver
+package com.shopreserve.app
 
 import android.os.Bundle
 import com.facebook.react.ReactActivity

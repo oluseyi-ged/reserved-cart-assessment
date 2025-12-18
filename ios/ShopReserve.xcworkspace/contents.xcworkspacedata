@@ -5,6 +5,6 @@
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:SimplirideDriver.xcodeproj">
+      location = "group:ShopReserve.xcodeproj">
    </FileRef>
 </Workspace>

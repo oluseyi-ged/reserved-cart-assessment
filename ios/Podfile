@@ -36,7 +36,7 @@ pod 'GoogleDataTransport', '~> 9.3'
 # CHANGED: Allow GoogleUtilities 7.13+ for Firebase compatibility
 pod 'GoogleUtilities', '~> 7.13', :modular_headers => true
 
-target 'SimplirideDriver' do
+target 'ShopReserve' do
   config = use_native_modules!
 
   rn_maps_path = '../node_modules/react-native-maps'
