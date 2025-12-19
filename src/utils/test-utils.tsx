@@ -1,31 +1,32 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import {configureStore} from '@reduxjs/toolkit';
-import {mutationApi} from '@services/mutationApi';
-import {queryApi} from '@services/queryApi';
-import authReducer from '@slices/auth';
-import loggedReducer from '@slices/logged';
-import toastReducer from '@slices/toast';
-import tokenReducer from '@slices/token';
+import {cartReducer} from '@slices';
 import {render, RenderOptions} from '@testing-library/react-native';
 import React, {ReactElement} from 'react';
 import {Provider} from 'react-redux';
+import {combineReducers} from 'redux';
+import {persistReducer} from 'redux-persist';
 
-const rootReducer = {
-  token: tokenReducer,
-  toast: toastReducer,
-  auth: authReducer,
-  logged: loggedReducer,
-  [queryApi.reducerPath]: queryApi.reducer,
-  [mutationApi.reducerPath]: mutationApi.reducer,
+const reducers = combineReducers({
+  cart: cartReducer,
+});
+
+const persistConfig = {
+  key: 'root',
+  storage: AsyncStorage,
+  whitelist: ['cart'],
 };
+
+const persistedReducer = persistReducer(persistConfig, reducers);
 
 export function createTestStore(preloadedState?: any) {
   return configureStore({
-    reducer: rootReducer,
+    reducer: persistedReducer,
     preloadedState,
     middleware: getDefaultMiddleware =>
       getDefaultMiddleware({
         serializableCheck: false,
-      }).concat(mutationApi.middleware, queryApi.middleware),
+      }),
   });
 }
 

@@ -150,7 +150,7 @@ export const Block: FC<Props> = ({
 }) => {
   const blockStyle = StyleSheet.flatten([
     flex !== undefined && {flex},
-    row && {flexDirection: 'row'},
+    row && {flexDirection: 'row' as const},
     justify !== undefined && {justifyContent: justify},
     justifyContent !== undefined && {justifyContent},
     align !== undefined && {alignItems: align},

@@ -5,10 +5,11 @@ end
 
 node_require('react-native/scripts/react_native_pods.rb')
 
+use_frameworks! :linkage => :static
+
 platform :ios, '15.5'
 prepare_react_native_project!
 
-# Fix for duplicate UUIDs
 install! 'cocoapods', :deterministic_uuids => false
 
 target 'ShopReserve' do
@@ -21,10 +22,8 @@ target 'ShopReserve' do
   )
 
   post_install do |installer|
-    # Set ONLY_ACTIVE_ARCH to NO at project level (matching simpliride-driver)
     installer.pods_project.build_configurations.each do |config|
       config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-      config.build_settings['SWIFT_ENABLE_EXPLICIT_MODULES'] = 'NO'
     end
 
     react_native_post_install(
@@ -34,23 +33,13 @@ target 'ShopReserve' do
     )
 
     installer.pods_project.targets.each do |target|
-      target.build_configurations.each do |build_config|
-        build_config.build_settings['SWIFT_VERSION'] = '5.0'
-        build_config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
-        build_config.build_settings['SWIFT_ENABLE_EXPLICIT_MODULES'] = 'NO'
+      target.build_configurations.each do |config|
+        config.build_settings['SWIFT_VERSION'] = '5.0'
+        config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
 
-        # Fix deployment target warnings
-        if build_config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 13.0
-          build_config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
+        if config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'].to_f < 13.0
+          config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '13.0'
         end
-      end
-    end
-
-    xcconfig_fix = "\nSWIFT_ENABLE_EXPLICIT_MODULES = NO\n"
-    Dir.glob(File.join(installer.sandbox.root, 'Target Support Files', '**', '*.xcconfig')).each do |xcconfig_path|
-      xcconfig_content = File.read(xcconfig_path)
-      unless xcconfig_content.include?('SWIFT_ENABLE_EXPLICIT_MODULES')
-        File.open(xcconfig_path, 'a') { |f| f.puts xcconfig_fix }
       end
     end
   end

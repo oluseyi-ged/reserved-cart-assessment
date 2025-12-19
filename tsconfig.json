@@ -22,6 +22,8 @@
       "@slices/*": ["slices/*"],
       "@types": ["types"],
       "@types/*": ["types/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
       "store": ["store"]
     },
     "module": "commonjs",

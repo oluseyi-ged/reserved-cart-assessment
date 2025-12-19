@@ -178,7 +178,6 @@ export const CartScreen: React.FC = () => {
         data={cartItems}
         renderItem={renderItem}
         keyExtractor={keyExtractor}
-        estimatedItemSize={140}
         ListEmptyComponent={ListEmptyComponent}
         ListHeaderComponent={ListHeaderComponent}
         contentContainerStyle={styles.listContent}

@@ -10,6 +10,7 @@
 		0018F7F797EE714A4DED278D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		0076AC82C63F4EAE865F0591 /* Outfit-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7EC1169AD3BE49759D34C5A6 /* Outfit-SemiBold.ttf */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		20F8803FC9C839609156C2F0 /* Pods_ShopReserve.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944849F6F47B81E86E6C6AE2 /* Pods_ShopReserve.framework */; };
 		25951EC11A90400DA2E35B37 /* Outfit-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30CB452ECE6D4E48848A4031 /* Outfit-Regular.ttf */; };
 		320D504467C041DFA7328C03 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA051EBC9B5B46CCB4C57CC9 /* Colors.xcassets */; };
 		4DCDF470B6DA4DCBA2378B3E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A8DE20DB3F49659F72680C /* Colors.xcassets */; };
@@ -17,7 +18,6 @@
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		7A25C6A4BF4C4612882975D2 /* Outfit-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4B0852F969840AA84A8A597 /* Outfit-Light.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9EE02109C8D84B77EC55D2E0 /* libPods-ShopReserve.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1DA7720DB80C1CAF826A191 /* libPods-ShopReserve.a */; };
 		A028F8EE1E424579996F6D03 /* Outfit-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44D6E14C648B4F2E8DCC0C95 /* Outfit-Thin.ttf */; };
 		BE81516889554DB3B7FEA844 /* Outfit-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA45205910BF47878DA9005D /* Outfit-ExtraLight.ttf */; };
 		C1D5C00C2EE031AA00729259 /* ev.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C1D5C0092EE031AA00729259 /* ev.mp3 */; };
@@ -56,6 +56,7 @@
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ShopReserve/AppDelegate.swift; sourceTree = "<group>"; };
 		7EC1169AD3BE49759D34C5A6 /* Outfit-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-SemiBold.ttf"; path = "../src/assets/fonts/Outfit-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ShopReserve/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		944849F6F47B81E86E6C6AE2 /* Pods_ShopReserve.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShopReserve.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B631F96BB94A52A28056F5 /* Outfit-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-ExtraBold.ttf"; path = "../src/assets/fonts/Outfit-ExtraBold.ttf"; sourceTree = "<group>"; };
 		C0A551821D5B52F3D378651C /* Pods-ShopReserve.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopReserve.debug.xcconfig"; path = "Target Support Files/Pods-ShopReserve/Pods-ShopReserve.debug.xcconfig"; sourceTree = "<group>"; };
 		C1D5C0002EE031AA00729259 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm.mp3; sourceTree = "<group>"; };
@@ -73,7 +74,6 @@
 		C1F268F72EE01F3A0053C60E /* notification.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = notification.mp3; sourceTree = "<group>"; };
 		D4B0852F969840AA84A8A597 /* Outfit-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-Light.ttf"; path = "../src/assets/fonts/Outfit-Light.ttf"; sourceTree = "<group>"; };
 		DA45205910BF47878DA9005D /* Outfit-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Outfit-ExtraLight.ttf"; path = "../src/assets/fonts/Outfit-ExtraLight.ttf"; sourceTree = "<group>"; };
-		E1DA7720DB80C1CAF826A191 /* libPods-ShopReserve.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ShopReserve.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E66BF4AA1FF9FBDE6F5CF808 /* Pods-ShopReserve.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShopReserve.release.xcconfig"; path = "Target Support Files/Pods-ShopReserve/Pods-ShopReserve.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		FA051EBC9B5B46CCB4C57CC9 /* Colors.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = ShopReserve/Colors.xcassets; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9EE02109C8D84B77EC55D2E0 /* libPods-ShopReserve.a in Frameworks */,
+				20F8803FC9C839609156C2F0 /* Pods_ShopReserve.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				E1DA7720DB80C1CAF826A191 /* libPods-ShopReserve.a */,
+				944849F6F47B81E86E6C6AE2 /* Pods_ShopReserve.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
